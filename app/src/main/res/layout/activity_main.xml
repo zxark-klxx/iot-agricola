@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6F4"
+    android:gravity="center">
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="SISTEMA IoT"
+       android:textColor="#2E7D32"
+       android:textSize="34sp"
+       android:textStyle="bold"
+       android:layout_marginBottom="4dp" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Monitoreo Agrícola"
+       android:textColor="#555555"
+       android:textSize="18sp"
+       android:letterSpacing="0.05"
+       android:layout_marginBottom="40dp" />
+
+   <!-- Tarjeta Blanca Flotante para el Formulario -->
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="32dp"
+       app:cardCornerRadius="16dp"
+       app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="28dp"
+          android:background="@android:color/white">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Iniciar Sesión"
+             android:textColor="@android:color/black"
+             android:textSize="22sp"
+             android:textStyle="bold"
+             android:layout_marginBottom="25dp"
+             android:textAlignment="center"/>
+
+         <!-- Campo Correo -->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Correo Electrónico"
+             android:textColor="#777777"
+             android:textSize="14sp"
+             android:textStyle="bold"
+             android:layout_marginBottom="8dp"/>
+
+         <EditText
+             android:id="@+id/etCorreo"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:background="#F0F5F1"
+             android:paddingHorizontal="16dp"
+             android:hint="ejemplo@correo.com"
+             android:textColorHint="#AAAAAA"
+             android:textColor="@android:color/black"
+             android:inputType="textEmailAddress"
+             android:layout_marginBottom="20dp" />
+
+         <!-- Campo Contraseña -->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Contraseña"
+             android:textColor="#777777"
+             android:textSize="14sp"
+             android:textStyle="bold"
+             android:layout_marginBottom="8dp"/>
+
+         <EditText
+             android:id="@+id/etPassword"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:background="#F0F5F1"
+             android:paddingHorizontal="16dp"
+             android:hint="••••••••"
+             android:textColorHint="#AAAAAA"
+             android:textColor="@android:color/black"
+             android:inputType="textPassword"
+             android:layout_marginBottom="35dp" />
+
+         <!-- Botón Login -->
+         <Button
+             android:id="@+id/btnLogin"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:text="INGRESAR"
+             android:backgroundTint="#2E7D32"
+             android:textColor="@android:color/white"
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+</LinearLayout>
